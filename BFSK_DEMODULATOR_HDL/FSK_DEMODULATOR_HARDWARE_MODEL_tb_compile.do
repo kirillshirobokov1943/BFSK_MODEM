@@ -1,0 +1,15 @@
+vlib work
+vlog  FSK_DEMODULATOR_HARDWARE_MODEL_pkg.sv
+vlog  Sample_and_Hold.sv
+vlog  DitherGen.sv
+vlog  SinLookUpTableGen.sv
+vlog  CosLookUpTableGen.sv
+vlog  WaveformGen.sv
+vlog  NCO.sv
+vlog  DitherGen_block.sv
+vlog  SinLookUpTableGen_block.sv
+vlog  CosLookUpTableGen_block.sv
+vlog  WaveformGen_block.sv
+vlog  NCO1.sv
+vlog  FSK_DEMODULATOR_HARDWARE_MODEL.sv
+vlog  FSK_DEMODULATOR_HARDWARE_MODEL_tb.sv

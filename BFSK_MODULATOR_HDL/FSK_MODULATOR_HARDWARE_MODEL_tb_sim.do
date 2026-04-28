@@ -1,0 +1,10 @@
+onbreak resume
+onerror resume
+vsim -voptargs=+acc work.FSK_MODULATOR_HARDWARE_MODEL_tb
+
+add wave sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/u_FSK_MODULATOR_HARDWARE_MODEL/clk
+add wave sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/u_FSK_MODULATOR_HARDWARE_MODEL/reset
+add wave sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/u_FSK_MODULATOR_HARDWARE_MODEL/modulating_signal
+add wave sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/u_FSK_MODULATOR_HARDWARE_MODEL/modulated_signal
+add wave sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/modulated_signal_ref
+run -all

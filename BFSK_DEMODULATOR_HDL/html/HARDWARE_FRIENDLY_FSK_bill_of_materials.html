@@ -1,0 +1,927 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level Resource Utilization Report for HARDWARE_FRIENDLY_FSK
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdBillOfMaterials'); else local_onload();}} catch(err) {};hdlTableShrink(this, 'Multiply_1_1');hdlTableShrink(this, 'Multiply_1_2');hdlTableShrink(this, 'Multiply_1_3');hdlTableShrink(this, 'Multiply_1_4');hdlTableShrink(this, 'Multiply_1_5');hdlTableShrink(this, 'Adder_1_1');hdlTableShrink(this, 'Adder_1_3');hdlTableShrink(this, 'Adder_1_4');hdlTableShrink(this, 'Subtractor_1_4');hdlTableShrink(this, 'Register_1_1');hdlTableShrink(this, 'Register_1_2');hdlTableShrink(this, 'Register_1_7');hdlTableShrink(this, 'Register_1_8');hdlTableShrink(this, 'Register_1_9');hdlTableShrink(this, 'Register_1_10');hdlTableShrink(this, 'Register_1_11');hdlTableShrink(this, 'Register_1_12');hdlTableShrink(this, 'Register_1_13');hdlTableShrink(this, 'Multiplexer_1_1');hdlTableShrink(this, 'Multiplexer_1_5');hdlTableShrink(this, 'Input_Port');hdlTableShrink(this, 'Output_Port');">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Generic Resource Report for HARDWARE_FRIENDLY_FSK
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Multipliers
+</td>
+<td align="center" valign="top" style="border-style: none">
+8
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Adders/Subtractors
+</td>
+<td align="center" valign="top" style="border-style: none">
+20
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+93
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Total 1-Bit Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+1508
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+RAMs
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Multiplexers
+</td>
+<td align="center" valign="top" style="border-style: none">
+26
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I/O Bits
+</td>
+<td align="center" valign="top" style="border-style: none">
+22
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Static Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Dynamic Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:35')" name="code2model" class="code2model">
+FSK_DEMODULATOR_HARDWARE_MODEL
+</a>
+
+</h5>
+<h5>
+Multipliers (8)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiply_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16x17-bit Multiply 							: 1
+</span>
+<span name="Multiply_1_1" id="Multiply_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:15')" name="code2model" class="code2model">
+Product
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiply_1_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+22x22-bit Multiply 							: 4
+</span>
+<span name="Multiply_1_2" id="Multiply_1_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:152')" name="code2model" class="code2model">
+Product4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:155')" name="code2model" class="code2model">
+Product5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:157')" name="code2model" class="code2model">
+Product6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:159')" name="code2model" class="code2model">
+Product7
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiply_1_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+17x16-bit Multiply 							: 1
+</span>
+<span name="Multiply_1_3" id="Multiply_1_3">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:16')" name="code2model" class="code2model">
+Product1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiply_1_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x17-bit Multiply 							: 1
+</span>
+<span name="Multiply_1_4" id="Multiply_1_4">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:17')" name="code2model" class="code2model">
+Product2
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiply_1_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+17x18-bit Multiply 							: 1
+</span>
+<span name="Multiply_1_5" id="Multiply_1_5">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:18')" name="code2model" class="code2model">
+Product3
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Adders/Subtractors (20)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+30x30-bit Adder 							: 1
+</span>
+<span name="Adder_1_1" id="Adder_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:162')" name="code2model" class="code2model">
+adder
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+28x28-bit Adder 							: 6
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_1_3')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+46x46-bit Adder 							: 5
+</span>
+<span name="Adder_1_3" id="Adder_1_3">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:92')" name="code2model" class="code2model">
+adder_1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:93')" name="code2model" class="code2model">
+adder_2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:31')" name="code2model" class="code2model">
+Sum
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:94')" name="code2model" class="code2model">
+adder_3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:95')" name="code2model" class="code2model">
+adder_4
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_1_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+44x44-bit Adder 							: 1
+</span>
+<span name="Adder_1_4" id="Adder_1_4">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:32')" name="code2model" class="code2model">
+Sum1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+13x13-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+17-bit Subtractor 							: 2
+</span>
+<br /><span style="font-family:monospace">
+19-bit Subtractor 							: 2
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Subtractor_1_4')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+44x44-bit Subtractor 							: 1
+</span>
+<span name="Subtractor_1_4" id="Subtractor_1_4">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:33')" name="code2model" class="code2model">
+Sum2
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (92)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+30-bit Register 							: 3
+</span>
+<span name="Register_1_1" id="Register_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:162')" name="code2model" class="code2model">
+HDL Counter
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:132')" name="code2model" class="code2model">
+Delay5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:92')" name="code2model" class="code2model">
+intdelay_1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+1-bit Register 							: 38
+</span>
+<span name="Register_1_2" id="Register_1_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:92')" name="code2model" class="code2model">
+intdelay
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:93')" name="code2model" class="code2model">
+intdelay_3
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:94')" name="code2model" class="code2model">
+intdelay_6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:95')" name="code2model" class="code2model">
+intdelay_9
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+28-bit Register 							: 6
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+13-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+10-bit Register 							: 4
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_7')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+16-bit Register 							: 8
+</span>
+<span name="Register_1_7" id="Register_1_7">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:129')" name="code2model" class="code2model">
+Delay2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:128')" name="code2model" class="code2model">
+Delay1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_8')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+46-bit Register 							: 8
+</span>
+<span name="Register_1_8" id="Register_1_8">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:92')" name="code2model" class="code2model">
+intdelay_2
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:136')" name="code2model" class="code2model">
+Delay9
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:93')" name="code2model" class="code2model">
+intdelay_5
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:137')" name="code2model" class="code2model">
+Delay10
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:94')" name="code2model" class="code2model">
+intdelay_8
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:138')" name="code2model" class="code2model">
+Delay11
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:95')" name="code2model" class="code2model">
+intdelay_11
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:139')" name="code2model" class="code2model">
+Delay12
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_9')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+43-bit Register 							: 4
+</span>
+<span name="Register_1_9" id="Register_1_9">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:140')" name="code2model" class="code2model">
+Delay13
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:141')" name="code2model" class="code2model">
+Delay14
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:142')" name="code2model" class="code2model">
+Delay15
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:143')" name="code2model" class="code2model">
+Delay16
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_10')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+27-bit Register 							: 6
+</span>
+<span name="Register_1_10" id="Register_1_10">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:133')" name="code2model" class="code2model">
+Delay6
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:93')" name="code2model" class="code2model">
+intdelay_4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:134')" name="code2model" class="code2model">
+Delay7
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:94')" name="code2model" class="code2model">
+intdelay_7
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:135')" name="code2model" class="code2model">
+Delay8
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:95')" name="code2model" class="code2model">
+intdelay_10
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_11')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+44-bit Register 							: 2
+</span>
+<span name="Register_1_11" id="Register_1_11">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:144')" name="code2model" class="code2model">
+Delay17
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:145')" name="code2model" class="code2model">
+Delay18
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_12')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18-bit Register 							: 8
+</span>
+<span name="Register_1_12" id="Register_1_12">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:131')" name="code2model" class="code2model">
+Delay4
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:130')" name="code2model" class="code2model">
+Delay3
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Register_1_13')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+45-bit Register 							: 1
+</span>
+<span name="Register_1_13" id="Register_1_13">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:146')" name="code2model" class="code2model">
+Delay19
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Multiplexers (25)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+30-bit 2-to-1 Multiplexer 							: 1
+</span>
+<span name="Multiplexer_1_1" id="Multiplexer_1_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:162')" name="code2model" class="code2model">
+switch
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+28-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+11-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+16-bit 2-to-1 Multiplexer 							: 8
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Multiplexer_1_5')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+46-bit 2-to-1 Multiplexer 							: 4
+</span>
+<span name="Multiplexer_1_5" id="Multiplexer_1_5">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:92')" name="code2model" class="code2model">
+Discrete_Time_Integrator_reg
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:93')" name="code2model" class="code2model">
+Discrete_Time_Integrator1_reg
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:94')" name="code2model" class="code2model">
+Discrete_Time_Integrator2_reg
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:95')" name="code2model" class="code2model">
+Discrete_Time_Integrator3_reg
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+18-bit 2-to-1 Multiplexer 							: 8
+</span>
+<br /><h5>
+Number of I/O Bits (22)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Input_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Input Bits: 20
+</span>
+<span name="Input_Port" id="Input_Port">
+<ul>
+<li>
+clk: 1 bit
+</li>
+<li>
+reset: 1 bit
+</li>
+<li>
+clk_enable: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:36')" name="code2model" class="code2model">
+modulated signal
+</a>
+: 17 bits
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Output_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Output Bits: 2
+</span>
+<span name="Output_Port" id="Output_Port">
+<ul>
+<li>
+ce_out: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:26')" name="code2model" class="code2model">
+Scope5
+</a>
+: 1 bit
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('HARDWARE_FRIENDLY_FSK:22')" name="code2model" class="code2model">
+Sample
+and Hold
+</a>
+
+</h5>
+<h5>
+Registers (1)
+</h5>
+<span style="font-family:monospace">
+1-bit Register 							: 1
+</span>
+<br /><h5>
+Multiplexers (1)
+</h5>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><p><hr /></p>
+</body>
+
+</html>

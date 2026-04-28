@@ -1,0 +1,146 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\pc\Desktop\study_project\Digital signal processing\BFSK_MODEM\BFSK_MODULATOR_HDL
+vcosine
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 DXx4 work 32 FSK_MODULATOR_HARDWARE_MODEL_pkg 0 22 h2:[0hT>4j7QVKezegbE11
+Z3 DXx4 work 14 cosine_sv_unit 0 22 n3R8<I167O6ISEOPz^LlK1
+Z4 VFT3ij]ZgCcgTJhaAkij1z2
+r1
+31
+Z5 I5kE8Y<UjSP;bXGXX9oL5:1
+S1
+Z6 dC:\Users\pc\Desktop\study_project\Digital signal processing\BFSK_MODEM\BFSK_MODULATOR_HDL
+Z7 w1777362427
+Z8 8cosine.sv
+Z9 Fcosine.sv
+L0 24
+Z10 OV;L;10.1d;51
+Z11 !s108 1777401515.065000
+Z12 !s107 cosine.sv|
+Z13 !s90 -reportprogress|300|-work|work|cosine.sv|
+Z14 o-work work -O0
+Z15 !s100 0e5_lY;iSgkZMTi9gY<MN0
+Z16 !s105 cosine_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xcosine_sv_unit
+R1
+R2
+Z17 Vn3R8<I167O6ISEOPz^LlK1
+r1
+31
+Z18 In3R8<I167O6ISEOPz^LlK1
+S1
+R6
+R7
+R8
+R9
+L0 11
+R10
+R11
+R12
+R13
+R14
+Z19 !s100 F=Ed`_KeQ4ccJiaAPJ>aJ1
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vFSK_MODULATOR_HARDWARE_MODEL
+R1
+R2
+Z20 DXx4 work 36 FSK_MODULATOR_HARDWARE_MODEL_sv_unit 0 22 9h3jg1SgAcQ0hGlKnE6M92
+Z21 VbNac9iC8U1D^gTcLQ[dWe1
+r1
+31
+Z22 IMQBbGKE_97_B_8n5?I0CT1
+S1
+R6
+Z23 w1777362423
+Z24 8FSK_MODULATOR_HARDWARE_MODEL.sv
+Z25 FFSK_MODULATOR_HARDWARE_MODEL.sv
+L0 31
+R10
+Z26 !s108 1777401515.159000
+Z27 !s107 FSK_MODULATOR_HARDWARE_MODEL.sv|
+Z28 !s90 -reportprogress|30|-work|work|FSK_MODULATOR_HARDWARE_MODEL.sv|
+R14
+Z29 n@f@s@k_@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l
+!s85 0
+!i10b 1
+Z30 !s100 X>i1@4K3^jnRc:669LFaB2
+Z31 !s105 FSK_MODULATOR_HARDWARE_MODEL_sv_unit
+!s101 -O0
+XFSK_MODULATOR_HARDWARE_MODEL_pkg
+R1
+Z32 Ih2:[0hT>4j7QVKezegbE11
+Z33 Vh2:[0hT>4j7QVKezegbE11
+S1
+R6
+Z34 w1777329785
+Z35 8FSK_MODULATOR_HARDWARE_MODEL_pkg.sv
+Z36 FFSK_MODULATOR_HARDWARE_MODEL_pkg.sv
+L0 12
+R10
+r1
+31
+R14
+Z37 n@f@s@k_@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l_pkg
+Z38 !s100 EfA3giRD1lV7GHgSIO6`Z1
+Z39 !s108 1777401515.003000
+Z40 !s107 FSK_MODULATOR_HARDWARE_MODEL_pkg.sv|
+Z41 !s90 -reportprogress|300|-work|work|FSK_MODULATOR_HARDWARE_MODEL_pkg.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+XFSK_MODULATOR_HARDWARE_MODEL_sv_unit
+R1
+R2
+Z42 V9h3jg1SgAcQ0hGlKnE6M92
+r1
+31
+Z43 I9h3jg1SgAcQ0hGlKnE6M92
+S1
+R6
+R23
+R24
+R25
+L0 18
+R10
+R26
+R27
+R28
+R14
+Z44 n@f@s@k_@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l_sv_unit
+!s85 0
+!i10b 1
+Z45 !s100 An7P<z4VP^iFE?GW6GLZT1
+!i103 1
+!s101 -O0
+vFSK_MODULATOR_HARDWARE_MODEL_tb
+R1
+!i10b 1
+!s100 Tl>Wi6<:mEh8oej^:RXUS1
+I[?G;NCf^fbJRUN^_T<QlX3
+Vg[K:64glf1N[jYC<=WI2P2
+!s105 FSK_MODULATOR_HARDWARE_MODEL_tb_sv_unit
+S1
+R6
+w1777329848
+8FSK_MODULATOR_HARDWARE_MODEL_tb.sv
+FFSK_MODULATOR_HARDWARE_MODEL_tb.sv
+L0 28
+R10
+r1
+!s85 0
+31
+!s108 1777401515.253000
+!s107 FSK_MODULATOR_HARDWARE_MODEL_tb.sv|
+!s90 -reportprogress|300|-work|work|FSK_MODULATOR_HARDWARE_MODEL_tb.sv|
+!s101 -O0
+R14
+n@f@s@k_@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l_tb

@@ -1,0 +1,586 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\pc\Desktop\study_project\Digital signal processing\BFSK_MODEM\BFSK_DEMODULATOR_HDL
+vCosLookUpTableGen
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 DXx4 work 34 FSK_DEMODULATOR_HARDWARE_MODEL_pkg 0 22 @5Q?T4BDimRJ?TF1mIfAe0
+Z3 DXx4 work 25 CosLookUpTableGen_sv_unit 0 22 6k6naQmHY:4ZG>3@:j7ZV0
+Z4 V6WPBm^^Rk?WzBH69M`min0
+r1
+31
+Z5 IzngeP8UmmFYj>SNfTPXeP1
+S1
+Z6 dC:\Users\pc\Desktop\study_project\Digital signal processing\BFSK_MODEM\BFSK_DEMODULATOR_HDL
+Z7 w1777363684
+Z8 8CosLookUpTableGen.sv
+Z9 FCosLookUpTableGen.sv
+L0 26
+Z10 OV;L;10.1d;51
+Z11 !s108 1777402848.952000
+Z12 !s107 CosLookUpTableGen.sv|
+Z13 !s90 -reportprogress|300|-work|work|CosLookUpTableGen.sv|
+Z14 o-work work -O0
+Z15 n@cos@look@up@table@gen
+Z16 !s100 5[hi7gl?LGDine]?f7VXf0
+Z17 !s105 CosLookUpTableGen_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+vCosLookUpTableGen_block
+R1
+R2
+Z18 DXx4 work 31 CosLookUpTableGen_block_sv_unit 0 22 lLNS8QiOHWd]zNJGDGiW51
+Z19 VFAP`m86E1gN<3zN9EdbKF1
+r1
+31
+Z20 Ihcn`<S4kg?j6PS7?`2b4]3
+S1
+R6
+R7
+Z21 8CosLookUpTableGen_block.sv
+Z22 FCosLookUpTableGen_block.sv
+L0 26
+R10
+Z23 !s108 1777402849.032000
+Z24 !s107 CosLookUpTableGen_block.sv|
+Z25 !s90 -reportprogress|300|-work|work|CosLookUpTableGen_block.sv|
+R14
+Z26 n@cos@look@up@table@gen_block
+Z27 !s100 =UBVOI_lbcg0VIBAH_N7A3
+Z28 !s105 CosLookUpTableGen_block_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+XCosLookUpTableGen_block_sv_unit
+R1
+R2
+Z29 VlLNS8QiOHWd]zNJGDGiW51
+r1
+31
+Z30 IlLNS8QiOHWd]zNJGDGiW51
+S1
+R6
+R7
+R21
+R22
+L0 11
+R10
+R23
+R24
+R25
+R14
+Z31 n@cos@look@up@table@gen_block_sv_unit
+Z32 !s100 FWXD8Rzi50[BZmbEMfgMV0
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+XCosLookUpTableGen_sv_unit
+R1
+R2
+Z33 V6k6naQmHY:4ZG>3@:j7ZV0
+r1
+31
+Z34 I6k6naQmHY:4ZG>3@:j7ZV0
+S1
+R6
+R7
+R8
+R9
+L0 11
+R10
+R11
+R12
+R13
+R14
+Z35 n@cos@look@up@table@gen_sv_unit
+Z36 !s100 a_^?[JEMPhNZYo6n6]^193
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vDitherGen
+R1
+Z37 I?UojI<0=@K7[39iW^J4>U3
+Z38 VFVTIeIY>_n`6G=[c<JmYU2
+S1
+R6
+R7
+Z39 8DitherGen.sv
+Z40 FDitherGen.sv
+L0 24
+R10
+r1
+31
+R14
+Z41 n@dither@gen
+Z42 !s100 G<z006RMZD7JJR^YJ2T162
+Z43 !s105 DitherGen_sv_unit
+Z44 !s108 1777402849.122000
+Z45 !s107 DitherGen.sv|
+Z46 !s90 -reportprogress|300|-work|work|DitherGen.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vDitherGen_block
+R1
+R2
+Z47 DXx4 work 23 DitherGen_block_sv_unit 0 22 DH>W4fSzSlHlfY=HLHQIQ2
+Z48 VH^78WH01KCBd0Lf<U]?Ol0
+r1
+31
+Z49 ILck2zQ=ZMz^h<^7G:N9::2
+S1
+R6
+R7
+Z50 8DitherGen_block.sv
+Z51 FDitherGen_block.sv
+L0 26
+R10
+Z52 !s108 1777402849.192000
+Z53 !s107 DitherGen_block.sv|
+Z54 !s90 -reportprogress|30|-work|work|DitherGen_block.sv|
+R14
+Z55 n@dither@gen_block
+Z56 !s100 mBf;<Mgd8T[IzmK_e2zOD2
+Z57 !s105 DitherGen_block_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+XDitherGen_block_sv_unit
+R1
+R2
+Z58 VDH>W4fSzSlHlfY=HLHQIQ2
+r1
+31
+Z59 IDH>W4fSzSlHlfY=HLHQIQ2
+S1
+R6
+R7
+R50
+R51
+L0 11
+R10
+R52
+R53
+R54
+R14
+Z60 n@dither@gen_block_sv_unit
+Z61 !s100 KN2nj02o;lJDkcg;o8@RX1
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vFSK_DEMODULATOR_HARDWARE_MODEL
+R1
+R2
+Z62 DXx4 work 38 FSK_DEMODULATOR_HARDWARE_MODEL_sv_unit 0 22 AAOHH:HFCneP=gaZ@NOM00
+Z63 VBI8WgbC?bR[1@<kBMlDE`1
+r1
+31
+Z64 IOLYi]QP]i5^KcTFidWW`D3
+S1
+R6
+R7
+Z65 8FSK_DEMODULATOR_HARDWARE_MODEL.sv
+Z66 FFSK_DEMODULATOR_HARDWARE_MODEL.sv
+L0 43
+R10
+Z67 !s108 1777402849.882000
+Z68 !s107 FSK_DEMODULATOR_HARDWARE_MODEL.sv|
+Z69 !s90 -reportprogress|300|-work|work|FSK_DEMODULATOR_HARDWARE_MODEL.sv|
+R14
+Z70 n@f@s@k_@d@e@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l
+!s85 0
+!i10b 1
+Z71 !s100 3JSHXGAWOZW?0=_V0B?QJ1
+Z72 !s105 FSK_DEMODULATOR_HARDWARE_MODEL_sv_unit
+!s101 -O0
+XFSK_DEMODULATOR_HARDWARE_MODEL_pkg
+R1
+Z73 I@5Q?T4BDimRJ?TF1mIfAe0
+Z74 V@5Q?T4BDimRJ?TF1mIfAe0
+S1
+R6
+R7
+Z75 8FSK_DEMODULATOR_HARDWARE_MODEL_pkg.sv
+Z76 FFSK_DEMODULATOR_HARDWARE_MODEL_pkg.sv
+L0 12
+R10
+r1
+31
+R14
+Z77 n@f@s@k_@d@e@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l_pkg
+Z78 !s100 j3RWng=CgEPJZ:naLEODT1
+Z79 !s108 1777402848.872000
+Z80 !s107 FSK_DEMODULATOR_HARDWARE_MODEL_pkg.sv|
+Z81 !s90 -reportprogress|300|-work|work|FSK_DEMODULATOR_HARDWARE_MODEL_pkg.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+XFSK_DEMODULATOR_HARDWARE_MODEL_sv_unit
+R1
+R2
+Z82 VAAOHH:HFCneP=gaZ@NOM00
+r1
+31
+Z83 IAAOHH:HFCneP=gaZ@NOM00
+S1
+R6
+R7
+R65
+R66
+L0 30
+R10
+R67
+R68
+R69
+R14
+Z84 n@f@s@k_@d@e@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l_sv_unit
+!s85 0
+!i10b 1
+Z85 !s100 g>;QMCQnLk8M4@I`d@5=Z1
+!i103 1
+!s101 -O0
+vFSK_DEMODULATOR_HARDWARE_MODEL_tb
+R1
+!i10b 1
+!s100 Wee]571b97MGKKUg?:6lk1
+I<R=A`QDG?R8P;>@;7oCeW3
+VZ@EWb`;3C2lBI@D_SKEcN1
+!s105 FSK_DEMODULATOR_HARDWARE_MODEL_tb_sv_unit
+S1
+R6
+w1777364263
+8FSK_DEMODULATOR_HARDWARE_MODEL_tb.sv
+FFSK_DEMODULATOR_HARDWARE_MODEL_tb.sv
+L0 28
+R10
+r1
+!s85 0
+31
+!s108 1777402849.987000
+!s107 FSK_DEMODULATOR_HARDWARE_MODEL_tb.sv|
+!s90 -reportprogress|300|-work|work|FSK_DEMODULATOR_HARDWARE_MODEL_tb.sv|
+!s101 -O0
+R14
+n@f@s@k_@d@e@m@o@d@u@l@a@t@o@r_@h@a@r@d@w@a@r@e_@m@o@d@e@l_tb
+vNCO
+R1
+R2
+Z86 DXx4 work 11 NCO_sv_unit 0 22 OZTDn]jk^d0aln=0nzghl1
+Z87 V792_AkW5l2HiGPEl4g7H01
+r1
+31
+Z88 ILjUkPA7EC58;3mm0KBBIb3
+S1
+R6
+R7
+Z89 8NCO.sv
+Z90 FNCO.sv
+L0 26
+R10
+Z91 !s108 1777402849.282000
+Z92 !s107 NCO.sv|
+Z93 !s90 -reportprogress|300|-work|work|NCO.sv|
+R14
+Z94 n@n@c@o
+Z95 !s100 7jFdG;32N4nMQ6NhKzJ;J3
+Z96 !s105 NCO_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+vNCO1
+R1
+R2
+Z97 DXx4 work 12 NCO1_sv_unit 0 22 W_nm0@hFlLBUlXW8b^31C1
+Z98 VgPoSbbI9l1cN`mcIaeeom1
+r1
+31
+Z99 I:L4hBe@WF=aP_TJ4M`bO70
+S1
+R6
+R7
+Z100 8NCO1.sv
+Z101 FNCO1.sv
+L0 26
+R10
+Z102 !s108 1777402849.372000
+Z103 !s107 NCO1.sv|
+Z104 !s90 -reportprogress|300|-work|work|NCO1.sv|
+R14
+Z105 n@n@c@o1
+Z106 !s100 _I6MNTc?zm2PQZ;>DBdVW0
+Z107 !s105 NCO1_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+XNCO1_sv_unit
+R1
+R2
+Z108 VW_nm0@hFlLBUlXW8b^31C1
+r1
+31
+Z109 IW_nm0@hFlLBUlXW8b^31C1
+S1
+R6
+R7
+R100
+R101
+L0 11
+R10
+R102
+R103
+R104
+R14
+Z110 n@n@c@o1_sv_unit
+Z111 !s100 2?h:EVk_aP3k5[:07g0Qa0
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+XNCO_sv_unit
+R1
+R2
+Z112 VOZTDn]jk^d0aln=0nzghl1
+r1
+31
+Z113 IOZTDn]jk^d0aln=0nzghl1
+S1
+R6
+R7
+R89
+R90
+L0 11
+R10
+R91
+R92
+R93
+R14
+Z114 n@n@c@o_sv_unit
+Z115 !s100 o<Sd27?QmLQF@dZ<^7Qcm2
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vSample_and_Hold
+R1
+Z116 In<7[<c;g6RXONR0RW^2D93
+Z117 VbSR36cESjKTcg^zbkDC=c3
+S1
+R6
+R7
+Z118 8Sample_and_Hold.sv
+Z119 FSample_and_Hold.sv
+L0 22
+R10
+r1
+31
+R14
+Z120 n@sample_and_@hold
+Z121 !s100 @PI^67REO<B`8VH>:BPFW1
+Z122 !s105 Sample_and_Hold_sv_unit
+Z123 !s108 1777402849.452000
+Z124 !s107 Sample_and_Hold.sv|
+Z125 !s90 -reportprogress|300|-work|work|Sample_and_Hold.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vSinLookUpTableGen
+R1
+R2
+Z126 DXx4 work 25 SinLookUpTableGen_sv_unit 0 22 07e6;b<X_RoJPz2RmCYkc3
+Z127 VnFKPW7991<a`87_8G=?`^0
+r1
+31
+Z128 IEA35KK>6RQEA2]15M3dEX3
+S1
+R6
+R7
+Z129 8SinLookUpTableGen.sv
+Z130 FSinLookUpTableGen.sv
+L0 26
+R10
+Z131 !s108 1777402849.522000
+Z132 !s107 SinLookUpTableGen.sv|
+Z133 !s90 -reportprogress|300|-work|work|SinLookUpTableGen.sv|
+R14
+Z134 n@sin@look@up@table@gen
+Z135 !s100 cJfB;k82ZX<DLjYU6z71k0
+Z136 !s105 SinLookUpTableGen_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+vSinLookUpTableGen_block
+R1
+R2
+Z137 DXx4 work 31 SinLookUpTableGen_block_sv_unit 0 22 2=_C>014Y50jN4X@R?S8<2
+Z138 V9M7T:`SGgbnc9eWz8TBl20
+r1
+31
+Z139 IPgK?NQ`hd]_T>Eoc@UH[I0
+S1
+R6
+R7
+Z140 8SinLookUpTableGen_block.sv
+Z141 FSinLookUpTableGen_block.sv
+L0 26
+R10
+Z142 !s108 1777402849.617000
+Z143 !s107 SinLookUpTableGen_block.sv|
+Z144 !s90 -reportprogress|300|-work|work|SinLookUpTableGen_block.sv|
+R14
+Z145 n@sin@look@up@table@gen_block
+Z146 !s100 8[YNHfAhoVjQl:69BG^FI3
+Z147 !s105 SinLookUpTableGen_block_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+XSinLookUpTableGen_block_sv_unit
+R1
+R2
+Z148 V2=_C>014Y50jN4X@R?S8<2
+r1
+31
+Z149 I2=_C>014Y50jN4X@R?S8<2
+S1
+R6
+R7
+R140
+R141
+L0 11
+R10
+R142
+R143
+R144
+R14
+Z150 n@sin@look@up@table@gen_block_sv_unit
+Z151 !s100 lk:a_1H3F;00Adm?eMS7K3
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+XSinLookUpTableGen_sv_unit
+R1
+R2
+Z152 V07e6;b<X_RoJPz2RmCYkc3
+r1
+31
+Z153 I07e6;b<X_RoJPz2RmCYkc3
+S1
+R6
+R7
+R129
+R130
+L0 11
+R10
+R131
+R132
+R133
+R14
+Z154 n@sin@look@up@table@gen_sv_unit
+Z155 !s100 _8H[dBV2^[=?1XcaR^BN71
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vWaveformGen
+R1
+R2
+Z156 DXx4 work 19 WaveformGen_sv_unit 0 22 >kU9l0^ABkYdEc=nGJ9M82
+Z157 VPOag_^ANbDANoZ1EkCc<Q0
+r1
+31
+Z158 IZ_ZToI9OHE?5mJ3GT6lmX2
+S1
+R6
+R7
+Z159 8WaveformGen.sv
+Z160 FWaveformGen.sv
+L0 26
+R10
+Z161 !s108 1777402849.702000
+Z162 !s107 WaveformGen.sv|
+Z163 !s90 -reportprogress|300|-work|work|WaveformGen.sv|
+R14
+Z164 n@waveform@gen
+Z165 !s100 l<oof@na@1gf<NZ62[4c>2
+Z166 !s105 WaveformGen_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+vWaveformGen_block
+R1
+R2
+Z167 DXx4 work 25 WaveformGen_block_sv_unit 0 22 58HDC5ghUM6W6mWlO@?@?2
+Z168 VW]VWhO2YIKU<Jg0;RNX]J2
+r1
+31
+Z169 IUnQeWZAoeViJId[cjGg4C3
+S1
+R6
+R7
+Z170 8WaveformGen_block.sv
+Z171 FWaveformGen_block.sv
+L0 26
+R10
+Z172 !s108 1777402849.797000
+Z173 !s107 WaveformGen_block.sv|
+Z174 !s90 -reportprogress|300|-work|work|WaveformGen_block.sv|
+R14
+Z175 n@waveform@gen_block
+Z176 !s100 bYE4Kh:j4c<oSRjWIanAQ0
+Z177 !s105 WaveformGen_block_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+XWaveformGen_block_sv_unit
+R1
+R2
+Z178 V58HDC5ghUM6W6mWlO@?@?2
+r1
+31
+Z179 I58HDC5ghUM6W6mWlO@?@?2
+S1
+R6
+R7
+R170
+R171
+L0 11
+R10
+R172
+R173
+R174
+R14
+Z180 n@waveform@gen_block_sv_unit
+Z181 !s100 Cn55]hL8P=UN]6kaa^^5;0
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+XWaveformGen_sv_unit
+R1
+R2
+Z182 V>kU9l0^ABkYdEc=nGJ9M82
+r1
+31
+Z183 I>kU9l0^ABkYdEc=nGJ9M82
+S1
+R6
+R7
+R159
+R160
+L0 11
+R10
+R161
+R162
+R163
+R14
+Z184 n@waveform@gen_sv_unit
+Z185 !s100 GzhdFHBeEE7kfUN^SBWUi0
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0

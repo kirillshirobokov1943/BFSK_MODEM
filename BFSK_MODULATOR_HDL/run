@@ -1,0 +1,60 @@
+# Reading D:/Quartus/modelsim_ase/tcl/vsim/pref.tcl 
+#cd {C:/Users/pc/Desktop/study_project/Digital signal processing/BFSK_MODEM/BFSK_MODULATOR_HDL}
+#vlog -reportprogress 300 -work work {C:/Users/pc/Desktop/study_project/Digital signal processing/BFSK_MODEM/BFSK_MODULATOR_HDL/FSK_MODULATOR_HARDWARE_MODEL_pkg.sv}
+# ???????? ?????? ??????????
+if [file exists work] { file delete -force work }
+vlib work
+
+vlog -reportprogress 300 -work work FSK_MODULATOR_HARDWARE_MODEL_pkg.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package FSK_MODULATOR_HARDWARE_MODEL_pkg
+# 
+# Top level modules:
+# 	--none--
+#vlog -reportprogress 300 -work work {C:/Users/pc/Desktop/study_project/Digital signal processing/BFSK_MODEM/BFSK_MODULATOR_HDL/cosine.sv}
+vlog -reportprogress 300 -work work cosine.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package cosine_sv_unit
+# -- Importing package FSK_MODULATOR_HARDWARE_MODEL_pkg
+# -- Compiling module cosine
+# 
+# Top level modules:
+# 	cosine
+#vlog -reportprogress 30 -work work {C:/Users/pc/Desktop/study_project/Digital signal processing/BFSK_MODEM/BFSK_MODULATOR_HDL/FSK_MODULATOR_HARDWARE_MODEL.sv}
+vlog -reportprogress 30 -work work FSK_MODULATOR_HARDWARE_MODEL.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package FSK_MODULATOR_HARDWARE_MODEL_sv_unit
+# -- Importing package FSK_MODULATOR_HARDWARE_MODEL_pkg
+# -- Compiling module FSK_MODULATOR_HARDWARE_MODEL
+# 
+# Top level modules:
+# 	FSK_MODULATOR_HARDWARE_MODEL
+#vlog -reportprogress 300 -work work {C:/Users/pc/Desktop/study_project/Digital signal processing/BFSK_MODEM/BFSK_MODULATOR_HDL/FSK_MODULATOR_HARDWARE_MODEL_tb.sv}
+vlog -reportprogress 300 -work work FSK_MODULATOR_HARDWARE_MODEL_tb.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FSK_MODULATOR_HARDWARE_MODEL_tb
+# 
+# Top level modules:
+# 	FSK_MODULATOR_HARDWARE_MODEL_tb
+vsim -gui work.FSK_MODULATOR_HARDWARE_MODEL_tb
+# vsim -gui work.FSK_MODULATOR_HARDWARE_MODEL_tb 
+# Loading sv_std.std
+# Loading work.FSK_MODULATOR_HARDWARE_MODEL_tb
+# Loading work.FSK_MODULATOR_HARDWARE_MODEL_pkg
+# Loading work.FSK_MODULATOR_HARDWARE_MODEL_sv_unit
+# Loading work.FSK_MODULATOR_HARDWARE_MODEL
+# Loading work.cosine_sv_unit
+# Loading work.cosine
+add wave  \
+sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/clk
+add wave  \
+sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/reset
+add wave  \
+sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/modulating_signal
+add wave  \
+sim:/FSK_MODULATOR_HARDWARE_MODEL_tb/modulated_signal
+run -all
+# ERROR in modulated_signal at time                   40 : Expected '00000' Actual '18000'
+# **************TEST COMPLETED (FAILED)**************
+# Break in NamedBeginStat clk_gen at C:/Users/pc/Desktop/study_project/Digital signal processing/BFSK_MODEM/BFSK_MODULATOR_HDL/FSK_MODULATOR_HARDWARE_MODEL_tb.sv line 91
+

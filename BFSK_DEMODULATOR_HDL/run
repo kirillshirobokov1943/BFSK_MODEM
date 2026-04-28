@@ -1,0 +1,22 @@
+if [file exists work] { file delete -force work }
+vlib work
+vlog -reportprogress 300 -work work FSK_DEMODULATOR_HARDWARE_MODEL_pkg.sv
+vlog -reportprogress 300 -work work CosLookUpTableGen.sv
+vlog -reportprogress 300 -work work CosLookUpTableGen_block.sv
+vlog -reportprogress 300 -work work DitherGen.sv
+vlog -reportprogress 30 -work work DitherGen_block.sv
+vlog -reportprogress 300 -work work NCO.sv
+vlog -reportprogress 300 -work work NCO1.sv
+vlog -reportprogress 300 -work work Sample_and_Hold.sv
+vlog -reportprogress 300 -work work SinLookUpTableGen.sv
+vlog -reportprogress 300 -work work SinLookUpTableGen_block.sv
+vlog -reportprogress 300 -work work WaveformGen.sv
+vlog -reportprogress 300 -work work WaveformGen_block.sv
+vlog -reportprogress 300 -work work FSK_DEMODULATOR_HARDWARE_MODEL.sv
+vlog -reportprogress 300 -work work FSK_DEMODULATOR_HARDWARE_MODEL_tb.sv
+vsim -gui work.FSK_DEMODULATOR_HARDWARE_MODEL_tb
+add wave sim:/FSK_DEMODULATOR_HARDWARE_MODEL_tb/clk
+add wave sim:/FSK_DEMODULATOR_HARDWARE_MODEL_tb/reset
+add wave sim:/FSK_DEMODULATOR_HARDWARE_MODEL_tb/modulated_signal
+add wave sim:/FSK_DEMODULATOR_HARDWARE_MODEL_tb/demodulated_signal
+run -all
